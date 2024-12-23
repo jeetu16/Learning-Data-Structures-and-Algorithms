@@ -22,6 +22,8 @@ const reverseArray = (input) => {
     }
     return temp
 }
+// Time Complexity - O(n)
+// Space Complexity - O(n)
 
 
 const reverseArray2 = (input) => {
@@ -33,6 +35,8 @@ const reverseArray2 = (input) => {
     }
     return input;
 }
+// Time Complexity - O(n)
+// Space Complexity - O(1)
 
 console.log(reverseArray([1, 4, 3, 2, 6, 5]));
 console.log(reverseArray([4, 5, 1, 2]));
