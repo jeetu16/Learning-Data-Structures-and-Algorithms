@@ -1,7 +1,7 @@
 /*
 
-Rotate Array by One
-Difficulty: BasicAccuracy: 69.6%Submissions: 291K+Points: 1
+---> Rotate Array by One
+
 Given an array arr, rotate the array by one position in clock-wise direction.
 
 Examples:
