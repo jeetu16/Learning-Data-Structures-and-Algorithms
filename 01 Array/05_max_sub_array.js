@@ -40,10 +40,30 @@ function largestSum(input) {
             if(maxSum < sum) {
                 maxSum = sum;
             }
-        }
-        
+        } 
     }
     return maxSum;
 }
 
-console.log(largestSum([2,3,1,5,-7,5]));
+const largestSum2 = (input) => {
+    let maxSum = input[0];
+    let currMaxSum = input[0];
+    for (let index = 1; index < input.length; index++) {
+        currMaxSum = Math.max(input[index], input[index] + currMaxSum);
+        if(maxSum < currMaxSum) {
+            maxSum = currMaxSum;
+        }
+    }
+    return maxSum;
+}
+
+console.log(largestSum([-2,1,-3,4,-1,2,1,-5,4])); // 6 [4,-1,2,1]
+console.log(largestSum([5,4,-1,7,8])); // 23 [5,4,-1,7,8]
+console.log(largestSum([-2,-4])); // -2 [-2]
+
+console.log('--------------------------------------------');
+
+
+console.log(largestSum2([-2,1,-3,4,-1,2,1,-5,4])); // 6 [4,-1,2,1]
+console.log(largestSum2([5,4,-1,7,8])); // 23 [5,4,-1,7,8]
+console.log(largestSum2([-2,-4])); // -2 [-2]
