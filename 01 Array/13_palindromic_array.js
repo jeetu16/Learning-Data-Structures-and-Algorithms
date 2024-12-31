@@ -54,5 +54,8 @@ const palinArray = (input) => {
     
 }
 
+// Time Complexity - O(n * log(max(input)))
+// Space Complexity - O(1)
+
 console.log(palinArray([111, 222, 333, 444, 555]));
 console.log(palinArray([121, 131, 20]));

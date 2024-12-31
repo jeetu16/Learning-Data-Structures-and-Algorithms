@@ -45,6 +45,9 @@ function largestSum(input) {
     return maxSum;
 }
 
+// Time Complexity - O(n²)
+// Space Complexity - O(1)
+
 const largestSum2 = (input) => {
     let maxSum = input[0];
     let currMaxSum = input[0];
@@ -56,6 +59,10 @@ const largestSum2 = (input) => {
     }
     return maxSum;
 }
+
+// Time Complexity - O(n)
+// Space Complexity - O(1)
+
 
 console.log(largestSum([-2,1,-3,4,-1,2,1,-5,4])); // 6 [4,-1,2,1]
 console.log(largestSum([5,4,-1,7,8])); // 23 [5,4,-1,7,8]
